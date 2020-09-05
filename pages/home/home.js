@@ -20,5 +20,8 @@ Page({
     this.setData({
       counter: this.data.counter - 1
     })
+  },
+  handleGetUserInfo(event){
+    console.log(event);
   }
 })

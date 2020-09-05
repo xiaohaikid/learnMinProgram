@@ -1,11 +1,16 @@
-// pages/about/about.js
+// pages/category/category.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
+    message: "哈哈哈"
+  },
+  btnClick(){
+    this.setData({
+      message: "呵呵呵"
+    })
   },
 
   /**
