@@ -1,0 +1,12 @@
+<!--pages/view/view.wxml-->
+<text>pages/view/view.wxml</text>
+<view>哈哈哈</view>
+<view>嘿嘿嘿</view>
+<text>哈哈哈</text>
+<text>嘿嘿嘿</text>
+<view class="box1"
+      hover-class="hover-view"
+      
+      >
+  嘿嘿嘿
+</view>

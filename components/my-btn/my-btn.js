@@ -1,16 +1,13 @@
-// pages/home/home.js
+// components/my-btn/my-btn.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
+    message: '我是标题'
   },
 
-  handleTabClick(event){
-    console.log(event.detail.index,event.detail.title);
-  },
   /**
    * 生命周期函数--监听页面加载
    */
@@ -66,5 +63,4 @@ Page({
   onShareAppMessage: function () {
 
   }
-
 })

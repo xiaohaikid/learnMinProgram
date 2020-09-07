@@ -1,0 +1,8 @@
+/* pages/wxml/wxml.wxss */
+.box {
+  font-size: 60rpx;
+}
+
+.active {
+  color: pink;
+}

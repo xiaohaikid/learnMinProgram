@@ -1,23 +1,37 @@
-// pages/home/home.js
+// pages/wxml/wxml.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
+    message: '你好小程序',
+    nowTime: new Date().toLocaleString(),
+    isActive: false,
+    isShow: true
   },
-
-  handleTabClick(event){
-    console.log(event.detail.index,event.detail.title);
-  },
+  
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    setInterval(() => {
+      this.setData({
+        nowTime: new Date().toLocaleString()
+      })
+    },1000)
   },
 
+  handleSwitchColor(){
+    this.setData({
+      isActive: !this.data.isActive
+    })
+  },
+  handleSwitchShow(){
+    this.setData({
+      isShow: !this.data.isShow
+    })
+  },
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
@@ -66,5 +80,4 @@ Page({
   onShareAppMessage: function () {
 
   }
-
 })

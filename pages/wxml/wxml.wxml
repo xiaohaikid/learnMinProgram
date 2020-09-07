@@ -1,0 +1,29 @@
+<!--pages/wxml/wxml.wxml-->
+<text>pages/wxml/wxml.wxml</text>
+
+<view>{{message}}</view>
+
+<view>{{nowTime}}</view>
+
+<view class='box {{isActive ? "active": ""}}'>哈哈哈</view>
+<button size="mini" bindtap="handleSwitchColor">切換顏色</button>
+
+<map name="" ></map>
+
+<view wx:if="{{isShow}}">嘿嘿嘿</view>
+<button size="mini" bindtap="handleSwitchShow">切换显示</button>
+
+<block wx:for="{{3}}" wx:key="item">
+  <button>按钮</button>
+  <view>呵呵呵</view>
+  <text>我是内容</text>
+</block>
+
+<view>------------------------------------</view>
+
+<template name="contentItem">
+  <view>{{content}}</view>
+  <button size="mini">{{btnText}}</button>
+</template>
+
+<template is="contentItem" data="{{content:'你好啊',btnText:'按钮'}}"/>

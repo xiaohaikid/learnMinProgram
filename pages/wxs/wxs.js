@@ -1,4 +1,4 @@
-// pages/home/home.js
+// pages/wxs/wxs.js
 Page({
 
   /**
@@ -8,9 +8,6 @@ Page({
 
   },
 
-  handleTabClick(event){
-    console.log(event.detail.index,event.detail.title);
-  },
   /**
    * 生命周期函数--监听页面加载
    */
@@ -66,5 +63,4 @@ Page({
   onShareAppMessage: function () {
 
   }
-
 })

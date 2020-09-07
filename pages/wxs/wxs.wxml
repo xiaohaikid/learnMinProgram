@@ -1,0 +1,27 @@
+<!--pages/wxs/wxs.wxml-->
+<text>pages/wxs/wxs.wxml</text>
+<!-- <wxs module="info">
+  //js代码
+  var message = '你好啊';
+  var name = 'Ryan';
+  var sum = function(num1,num2){
+    return num1 + num2
+  }
+  function test(){
+  return "test function"
+}
+
+  module.exports = {
+  message: message,
+  name: name,
+  sum: sum,
+  test: test
+}
+</wxs> -->
+
+<wxs src="../../wxs/info.wxs" module="info"/>
+
+<view>{{info.message}}</view>
+<view>{{info.name}}</view>
+<view>{{info.sum(20,30)}}</view>
+<view>{{info.test()}}</view>
