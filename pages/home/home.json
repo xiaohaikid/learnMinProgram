@@ -3,6 +3,8 @@
     "my-cpn": "/components/my-btn/my-btn",
     "my-style": "/components/my-style/my-style",
     "my-prop": "/components/my-prop/my-prop",
-    "tab-contral": "/components/tab-contral/tab-contral"
+    "tab-contral": "/components/tab-contral/tab-contral",
+    "my-slot": "/components/my-slot/my-slot",
+    "my-mslot": "/components/my-mslot/my-mslot"
   }
 }
