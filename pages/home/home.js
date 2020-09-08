@@ -1,5 +1,28 @@
 // pages/home/home.js
 Page({
+  handleShowToast() {
+    wx.showToast({
+      title: '加载中ing',
+      duration: 3000,
+      icon: 'loading',
+      mask: true
+    })
+  },
+  handleShowModal(){
+    wx.showModal({
+      title: '我是标题',
+      content: '我是内容，哈哈哈',
+      success: function(res){
+        console.log(res);
+        if(res.cancel){
+          console.log('用户点击了取消');
+        }
+        if(res.confirm){
+          console.log('用户点击了确认');
+        }
+      }
+    })
+  },
 
   /**
    * 页面的初始数据
@@ -60,7 +83,11 @@ Page({
   /**
    * 用户点击右上角分享
    */
-  onShareAppMessage: function () {
-
+  onShareAppMessage: function (options) {
+    return {
+      title: '你好啊，李诚',
+      path: '/page/aboot/about',
+      imageUrl:'https://i2.hdslb.com/bfs/archive/ebba8511e36fe9c267e0f7b927e45ad94074291b.jpg@257w_145h_1c_100q.webp'
+    }
   }
 })
